@@ -1,0 +1,34 @@
+
+.home-bg {
+    background-image: url(./../img/nature-bg.jpg);
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    display: table;
+    width: 100%;
+}
+
+.home-bg:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.68);
+    z-index: 0;
+}
+
+.home-content {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 20px;
+    z-index: 5;
+}
+
+.box {
+  display:table-cell;
+  vertical-align: middle;
+  text-align: center;
+}

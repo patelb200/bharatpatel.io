@@ -1,0 +1,42 @@
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgb(255, 255, 255);
+}
+/* change the link color */
+.navbar-custom .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    color: black;
+}
+.nav-link {
+    color: black;
+}
+.transToWhiteBg {
+    -webkit-animation-name: transToWhiteBgAni; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
+    animation-name: transToWhiteBgAni;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.whiteToTransBg {
+    -webkit-animation-name: whiteToTransBgAni; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
+    animation-name: whiteToTransBgAni;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes transToWhiteBgAni {
+    0% { background-color: transparent; }
+    100% { background-color: #ffffff; }
+}
+
+@keyframes whiteToTransBgAni {
+    0% { background-color: #ffffff; }
+    100% { background-color: transparent; }
+}

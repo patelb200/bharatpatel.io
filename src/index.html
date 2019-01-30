@@ -22,7 +22,10 @@
     />
   </head>
 
-  <body>
+  <body id="body">
+    <div id="btnScrollToTop" class="floating-scroll-button transition">
+      <div class="text-center"><i class="fas fa-arrow-up fa-lg"></i></div>
+    </div>
     <nav id="main-nav" class="navbar navbar-custom fixed-top navbar-expand-lg">
       <div class="container">
         <div class="navbar-brand mb-0 h1">bharatpatel.io</div>
@@ -88,17 +91,22 @@
 
               <div class="card my-4">
                 <div class="card-body text-center">
-                  <i class="fab fa-stack-overflow"></i>
+                  <i class="fab fa-stack-exchange"></i>
                   <h6 class="text-uppercase">StackOverflow</h6>
                   <a href="https://stackoverflow.com/users/3300856/patelb">
-                    <img src="https://stackoverflow.com/users/flair/3300856.png?theme=clean" width="208" height="58">
-                    </a>
+                    <img
+                      class="img-fluid"
+                      src="https://stackoverflow.com/users/flair/3300856.png?theme=clean"
+                      width="208"
+                      height="58"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
             <p class="lead">
               I am a professional Software Developer for more than
-              <span id="proYears">6</span>+ years. I have an
+              <span id="proYears">6</span>+ years. I have a
               <b>Master of Science degree in Computer Science</b> from
               <span class="text-primary">Villanova University</span> and a
               <b

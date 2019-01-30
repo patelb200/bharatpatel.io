@@ -40,3 +40,28 @@
     0% { background-color: #ffffff; }
     100% { background-color: transparent; }
 }
+
+.floating-scroll-button {
+    background: white;
+    color: black;
+    border-radius: 45px;
+    display: flex;
+    bottom: 40px;
+    height: 45px;
+    width: 45px;
+    right: 40px;
+    position: fixed;
+    z-index: 1000;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.floating-scroll-button:hover {
+    background: black;
+    color: white;
+}
+
+.floating-scroll-button.transition {
+    transition: background 0.2s ease, color 0.2s ease;
+}

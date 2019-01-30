@@ -12,6 +12,10 @@ let btnServices: HTMLButtonElement = <HTMLButtonElement>(
   document.getElementById("btnServices")
 );
 
+let btnScrollToTop: HTMLElement = <HTMLElement>(
+  document.getElementById("btnScrollToTop")
+);
+
 function bodyOnScroll(event: UIEvent) {
   if (window.pageYOffset > 40) {
     mainNav.classList.remove("navbar-custom");
@@ -33,7 +37,6 @@ function bodyOnScroll(event: UIEvent) {
 
 function scrollToElementById(elementId: string) {
   let element: HTMLElement = <HTMLElement>document.getElementById(elementId);
- console.log(element)
   element.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
@@ -41,12 +44,23 @@ window.addEventListener("scroll", ev => bodyOnScroll(ev));
 
 btnTellMeMore.addEventListener("click", ev => {
   scrollToElementById("about-section");
+  ev.stopPropagation();
 });
 
 btnAboutMe.addEventListener("click", ev => {
   scrollToElementById("about-section");
+  ev.stopPropagation();
 });
 
 btnServices.addEventListener("click", ev => {
   scrollToElementById("services-section");
+  ev.stopPropagation();
+});
+
+btnScrollToTop.addEventListener("click", ev => {
+  scrollToElementById("body");
+});
+
+btnScrollToTop.addEventListener("touchend", ev => {
+  scrollToElementById("body");
 });

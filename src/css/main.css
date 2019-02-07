@@ -3,3 +3,10 @@
 @import url("./utilities.css");
 @import url("./nav.css");
 @import url("./services.css");
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 0;
+}

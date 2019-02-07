@@ -12,6 +12,10 @@ let btnServices: HTMLButtonElement = <HTMLButtonElement>(
   document.getElementById("btnServices")
 );
 
+let btnContactMe: HTMLButtonElement = <HTMLButtonElement>(
+  document.getElementById("btnContactMe")
+);
+
 let btnScrollToTop: HTMLElement = <HTMLElement>(
   document.getElementById("btnScrollToTop")
 );
@@ -57,6 +61,10 @@ btnServices.addEventListener("click", ev => {
   ev.stopPropagation();
 });
 
+btnContactMe.addEventListener("click", ev => {
+  scrollToElementById("contact-section");
+  ev.stopPropagation();
+});
 btnScrollToTop.addEventListener("click", ev => {
   scrollToElementById("body");
 });
@@ -64,3 +72,4 @@ btnScrollToTop.addEventListener("click", ev => {
 btnScrollToTop.addEventListener("touchend", ev => {
   scrollToElementById("body");
 });
+

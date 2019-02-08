@@ -1,67 +1,115 @@
+.nav-mobile {
+  display: none; /* Hide from browsers that don't support media queries */
+  cursor: pointer;
+}
+
+.btn-outline-dark{
+    border: none;
+}
+
+.nav-mobile::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  text-decoration: inherit;
+  content: "\f0c9";
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-mobile-open {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-mobile {
+    display: block;
+  }
+  .nav-list {
+    text-align: center;
+    display: none;
+  }
+  .nav-mobile-open {
+      display: block !important;
+  }
+}
+
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
+.navbar-custom .nav-mobile,
 .navbar-custom .navbar-text {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 /* change the link color */
 .navbar-custom .nav-link {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .nav-link {
-    color: black;
+  color: black;
 }
 .nav-link {
-    color: black;
+  color: black;
 }
 .transToWhiteBg {
-    -webkit-animation-name: transToWhiteBgAni; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
-    animation-name: transToWhiteBgAni;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
+  -webkit-animation-name: transToWhiteBgAni; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: transToWhiteBgAni;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .whiteToTransBg {
-    -webkit-animation-name: whiteToTransBgAni; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
-    animation-name: whiteToTransBgAni;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
+  -webkit-animation-name: whiteToTransBgAni; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: whiteToTransBgAni;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
-
 @keyframes transToWhiteBgAni {
-    0% { background-color: transparent; }
-    100% { background-color: #ffffff; }
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ffffff;
+  }
 }
 
 @keyframes whiteToTransBgAni {
-    0% { background-color: #ffffff; }
-    100% { background-color: transparent; }
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: transparent;
+  }
 }
 
 .floating-scroll-button {
-    background: white;
-    color: black;
-    border-radius: 45px;
-    display: flex;
-    bottom: 40px;
-    height: 45px;
-    width: 45px;
-    right: 40px;
-    position: fixed;
-    z-index: 1000;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
+  background: white;
+  color: black;
+  border-radius: 45px;
+  display: flex;
+  bottom: 40px;
+  height: 45px;
+  width: 45px;
+  right: 40px;
+  position: fixed;
+  z-index: 1000;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .floating-scroll-button:hover {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 .floating-scroll-button.transition {
-    transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }

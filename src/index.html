@@ -146,6 +146,12 @@
     <section id="services-section">
       <div class="container py-5">
         <h1 class="display-4">Services</h1>
+        <p>
+          I provide services for web development, programming/middleware,
+          database development, and server configurations. The following
+          breakdown is not a comprehensive list. Please do not hesitate to ask
+          about something that is not listed.
+        </p>
         <div class="row my-4 card-deck">
           <div class="card col-md-4 col-sm-6">
             <div class="card-body text-center">
@@ -236,15 +242,42 @@
       </div>
     </section>
     <section id="contact-section">
-      <div class="container">
-        <div class="row py-5">
-          <div class="col">
-            <h1 class="display-4">Contact Me</h1>
-            <p>Check back often as I update my site.</p>
-            <p>bharatpatelio200@gmail.com</p>
-          </div>
+      <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="section-title">Love to Hear From You</h1>
+            </div>
         </div>
-      </div>
+        <div class="row">
+            <div class="col-md-6 mt-3">
+              <p>Thanks for checking out my site. Feel free to contact me.</p>
+            </div>
+            <div class="col-md-6">
+                <form autocomplete="off" role="form" id="contactForm" name="contact-form">
+                    <div class="form-group label-floating">
+                      <label class="control-label" for="name">Name</label>
+                      <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                    </div>
+                    <div class="form-group label-floating">
+                      <label class="control-label" for="email">Email</label>
+                      <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                    </div>
+                    <div class="form-group label-floating">
+                      <label class="control-label">Subject</label>
+                      <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                    </div>
+                    <div class="form-group label-floating">
+                      <label for="message" class="control-label">Message</label>
+                      <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                    </div>
+                </form>
+                <div id="formSubmitResponse"></div>
+                <div>
+                  <button class="btn btn-light" type="submit" id="btnContactForm">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
     <script src="./bundle.js"></script>
   </body>

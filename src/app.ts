@@ -5,3 +5,4 @@ const css = require('./css/main.css');
 import './ts/main';
 import './ts/nav';
 import './ts/about-me';
+import './ts/contact';

@@ -5,7 +5,7 @@ let mobile = document.createElement("div");
 mobile.classList.add("nav-mobile");
 mainNav.querySelector(".container")!.appendChild(mobile);
 
-function bodyOnScroll(event: UIEvent) {
+function bodyOnScroll(event: Event) {
   if (window.pageYOffset > 40) {
     mainNav.classList.remove("navbar-custom");
     if (!mainNav.classList.contains("transToWhiteBg")) {

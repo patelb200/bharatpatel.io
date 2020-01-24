@@ -35,10 +35,10 @@ module.exports = {
   },
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "./dist")
+    path: path.resolve(__dirname, "./docs")
   },
   devServer: {
-    contentBase: path.resolve(__dirname, './dist')
+    contentBase: path.resolve(__dirname, './docs')
   },
   plugins: [
     new CopyWebpackPlugin([ { from: './src/index.html', to: './' }, ], {}),

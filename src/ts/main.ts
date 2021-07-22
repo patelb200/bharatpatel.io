@@ -12,6 +12,11 @@ let btnServices: HTMLButtonElement = <HTMLButtonElement>(
   document.getElementById("btnServices")
 );
 
+let btnBadges: HTMLButtonElement = <HTMLButtonElement>(
+  document.getElementById("btnBadges")
+);
+
+
 let btnContactMe: HTMLButtonElement = <HTMLButtonElement>(
   document.getElementById("btnContactMe")
 );
@@ -38,6 +43,11 @@ btnAboutMe.addEventListener("click", ev => {
 
 btnServices.addEventListener("click", ev => {
   scrollToElementById("services-section");
+  ev.stopPropagation();
+});
+
+btnBadges.addEventListener("click", ev => {
+  scrollToElementById("badges-section");
   ev.stopPropagation();
 });
 
